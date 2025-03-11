@@ -151,7 +151,6 @@ export default function Home() {
             <label className="block text-left mb-2">Preferred Study Group Size:</label>
             <select className="w-full p-2 mb-4 bg-gray-700 text-white rounded" value={formData.groupSize} onChange={(e) => setFormData({ ...formData, groupSize: e.target.value })} required>
               <option value="">Select group size</option>
-              <option>Solo</option>
               <option>Small Group (2-4 people)</option>
               <option>Large Group (5+ people)</option>
             </select>
