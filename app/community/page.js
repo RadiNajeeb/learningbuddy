@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 
-export default function Community() {
+export default function Purpose() {
   return (
     <div className="min-h-screen bg-gray-900 text-white">
       {/* Header */}
@@ -14,13 +14,13 @@ export default function Community() {
           <Link href="/" className="hover:text-blue-400">
             Home
           </Link>
-          <Link href="/purpose" className="hover:text-blue-400">
+          <Link href="/purpose" className="text-blue-400">
             Purpose
           </Link>
           <Link href="/topics" className="hover:text-blue-400">
             Topics
           </Link>
-          <Link href="/community" className="text-blue-400">
+          <Link href="/community" className="hover:text-blue-400">
             Community
           </Link>
         </nav>
@@ -29,32 +29,45 @@ export default function Community() {
       {/* Main Content */}
       <main className="flex flex-col items-center justify-center px-4 md:px-6 text-center py-16">
         <h1 className="text-2xl md:text-4xl font-bold mb-6 md:mb-10">
-          Join The Learning Buddy Community 🤝
+          Why I Created Learning Buddy 🚀
         </h1>
 
-        <p className="text-sm md:text-lg max-w-3xl text-gray-300 mb-8">
-          Learning Buddy is a brand-new platform, and our community is just getting started! We’re excited to bring students from around the world together to connect, share experiences, and grow as learners. Be among the first to join and help shape a supportive community for collaborative learning.
-        </p>
-
-        {/* Vision Section */}
-        <div className="max-w-3xl mb-10">
+        <section className="max-w-3xl">
           <h2 className="text-lg md:text-xl font-semibold text-blue-300 mb-4">
-            Our Vision
+            The Inspiration
           </h2>
-          <p className="text-sm md:text-lg text-gray-300">
-            We aim to create a global network where students can find study partners, exchange knowledge, and support each other on their learning journeys. As our community grows, you’ll be able to connect with like-minded learners, join study groups, and share your academic experiences.
+          <p className="text-sm md:text-lg text-gray-300 mb-6">
+            Throughout my school life, I had realized that{" "}
+            <span className="text-blue-400 font-semibold">collaborative learning</span>{" "}
+            was the key to truly enjoying and understanding difficult subjects. Back in high school, the reason I loved learning was because my peers and I made studying an interactive and engaging experience.
           </p>
-        </div>
 
-        {/* Call-to-Action */}
+          <h2 className="text-lg md:text-xl font-semibold text-blue-300 mb-4">
+            The Problem
+          </h2>
+          <p className="text-sm md:text-lg text-gray-300 mb-6">
+            The opportunities to connect with like-minded learners is currently limited. That’s why I built Learning Buddy — to bring back the{" "}
+            <span className="text-blue-400 font-semibold">power of teamwork</span>{" "}
+            in education.
+          </p>
+
+          <h2 className="text-lg md:text-xl font-semibold text-blue-300 mb-4">
+            The Solution
+          </h2>
+          <p className="text-sm md:text-lg text-gray-300 mb-6">
+            This platform will help students find study partners, share knowledge, and{" "}
+            <span className="text-blue-400 font-semibold">grow together</span>. 
+            Learning is more effective and enjoyable when we do it together! 
+          </p>
+        </section>
+
+        {/* Back to Home Button */}
         <Link 
           href="/" 
-          className="mt-6 px-8 py-3 bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-600 hover:scale-105 transition-transform duration-200 shadow-md"
+          className="mt-6 md:mt-10 px-4 md:px-6 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 hover:scale-105 transition-transform duration-200 text-sm md:text-base flex items-center gap-2"
         >
-          Join the Community Now 
+          <span>←</span> Back to Home
         </Link>
-
-        
       </main>
 
       {/* Footer */}
