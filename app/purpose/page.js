@@ -16,7 +16,7 @@ export default function Purpose() {
       </p>
 
       <p className="text-sm md:text-lg max-w-full md:max-w-3xl text-gray-300 mt-4">
-        However, I found that in my new college campus, this culture of collaborative learning was lacking significantly. 
+        I believe that the culture of collaborative learning is significantly lacking in universities currently. 
         Many students study by themselves — in isolation. Moreover, the opportunities to connect with like-minded learners 
         are limited. That&apos;s why I built Learning Buddy — to bring back the power of teamwork in education.
       </p>
